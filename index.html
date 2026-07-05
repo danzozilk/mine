@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confession</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Confession</h1>
+        <p>
+
+Hey caitlin❤️,
+
+I've been thinking for a while about how to put this into words, and honestly, it's harder than I expected.
+
+One of the first things I noticed about you was your smile. It's the kind of smile that can brighten someone's day without you even trying. I also love the way you talk—there's just something about it that makes me want to keep listening.
+
+The more I got to know you, the more I realised you have so many amazing qualities. You're beautiful,and your eyes also looks gud so don't get eye sugeries,u are funny, and there's something about your personality that keeps drawing me back.
+
+Of course, nobody is perfect (I'm definitely not 😅), so if I had one tiny wish, it'd be for you to show your caring side a little more and maybe soften your attitude just a bit sometimes. 😂
+
+And now for the fun part...
+
+If you ever learn how to cook some Nigerian food like jollof rice, egusi, pounded yam, or pepper soup... you might just make it impossible for me not to imagine a future with you. 😉
+
+No matter what happens, I just wanted you to know that these are the things I genuinely admire about you.caitlin have always liked u buh i didn't realized i was this deep into liking u until recently, i found myself looking at one of the snaps u sent and started giggling which made me realize how much i like u... it was kinda strange for me becuse am not that kind of person </p>
+<p class="sign-off">   still practicing my laughing buh "hahhhhahhahha"</p>
+    <div id="formSection">
+        <form action="https://formspree.io/f/xnjkwdva" method="post" id="confessionForm" class="confessionForm">
+            <input type="text" name="name" placeholder="lovers name💘" required>
+            <input type="text" name="name" placeholder="what ur name😏" required>
+            <textarea type="text" name="confession" placeholder="so tell me about ur lover catlin😏😏..." required></textarea>
+            <select name="relationship status" placeholder="relationship status" required>
+                <option value="" disabled selected>why haven't we gone out yet </option>
+                <option value="single">Scared i will bite u😂</option>
+                <option value="in_a_relationship">just not ready</option>
+                <option value="engaged">want to be just friends and i don't like him</option>
+                <option value="married">he is ugly(am sure u won't be picking dat🫣)</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="summarySection" style="display:none;">
+
+    <h2>💌 A Little Note</h2>
+
+    <p>Thank you for reading this.</p>
+
+    <p>
+        This wasn't written to impress you or pressure you into anything.
+        I simply wanted to be honest about how I feel and tell you the
+        little things I admire about you.
+    </p>
+
+    <p>
+        We've been together for a month now, but I’ve really been looking
+        forward to taking you out properly. ❤️
+    </p>
+
+    <p>
+        So... when are you finally going to let me take you on that date?
+        Hopefully sometime next week works for you. Just tell me the day.
+    </p>
+
+    <p>
+        If this made you smile, then it already did its job. 😊
+    </p>
+    <p>And also have a great day today...and am sure ur grandma will be proud of you!</p>
+
+</div>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("confessionForm");
+    const summary = document.getElementById("summarySection");
+    const formSection = document.getElementById("formSection");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        formSection.style.display = "none";
+        summary.style.display = "block";
+
+        summary.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+});
+</script>
